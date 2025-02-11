@@ -32,6 +32,10 @@ Previously, an API key was associated with a single Scaleway [Project](#project)
 
 With the introduction of IAM, an API key is now associated with an IAM [user](#user) or [application](#application). This allows fine-grained access to be defined for the IAM user bearing the API key across different Organizations, Projects, and resources.
 
+## Grace Period
+
+The grace period is the time an [IAM members](/iam/concepts#members) has to comply with the security requirements that are enforced in your Organization before their account is automatically locked. The accounts can be manually unlocked by an Owner or IAM Manager. Upon regaining access, the grace period resets, giving IAM members another chance to meet security requirements.
+
 ## Group
 
 A group (also known as an IAM group) is a grouping of [users](#user) and/or [applications](#application). Creating groups allows you to attach [policies](#policy) to multiple users and/or applications at the same time.
